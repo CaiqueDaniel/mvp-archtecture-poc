@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <FlowPane alignment="CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F6F5F2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <VBox alignment="TOP_CENTER" prefHeight="190.0" prefWidth="455.0" style="-fx-background-color: #D4E7C5; -fx-background-radius: 8px;">
+            <VBox fx:id="boxEmail" prefHeight="30.0" prefWidth="407.0">
+                <TextField fx:id="txtEmail" prefHeight="17.0" prefWidth="407.0" promptText="E-mail">
+                    <font>
+                        <Font name="Segoe UI" size="16.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="8.0" />
+                    </VBox.margin>
+                </TextField>
+            <Label fx:id="lblEmail" text="Label" textFill="RED" visible="false" />
+                <VBox.margin>
+                    <Insets bottom="24.0" />
+                </VBox.margin>
+            </VBox>
+            <VBox fx:id="boxPassword">
+                <TextField fx:id="txtPassword" prefHeight="32.0" prefWidth="316.0" promptText="Senha">
+                    <font>
+                        <Font name="Segoe UI" size="16.0" />
+                    </font>
+               <VBox.margin>
+                  <Insets bottom="8.0" />
+               </VBox.margin>
+                </TextField>
+            <Label fx:id="lblPassword" text="Label" textFill="RED" visible="false" />
+                <VBox.margin>
+                    <Insets bottom="24.0" />
+                </VBox.margin>
+            </VBox>
+            <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT">
+                <Button fx:id="btnSubmit" alignment="CENTER" defaultButton="true" mnemonicParsing="false" prefHeight="30.0" prefWidth="407.0" style="-fx-background-color: #99BC85;" text="Entrar" textFill="WHITE" HBox.hgrow="ALWAYS">
+                    <font>
+                        <Font name="Segoe UI" size="16.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </HBox>
+            <padding>
+                <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
+            </padding>
+        </VBox>
+    </FlowPane>
+</AnchorPane>
