@@ -2,6 +2,8 @@ package com.example.mvparchpoc.modules.login.presenters;
 
 import com.example.mvparchpoc.modules.login.dtos.LoginFormData;
 import com.example.mvparchpoc.modules.login.views.pages.LoginPage;
+import com.example.mvparchpoc.router.Router;
+import com.example.mvparchpoc.router.Routes;
 
 public class LoginPagePresenterImpl implements LoginPagePresenter {
     private final LoginPage page;
@@ -20,5 +22,7 @@ public class LoginPagePresenterImpl implements LoginPagePresenter {
             page.addValidationError("password", "Campo obrigatório");
         else page.removeValidationError("password");
 
+        if (!formData.email().isEmpty() && !formData.password().isEmpty())
+            Router.getInstance().navigateTo(Routes.TASKS);
     }
 }

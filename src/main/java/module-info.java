@@ -10,5 +10,6 @@ module com.example.mvparchpoc {
     requires lombok;
 
     opens com.example.mvparchpoc.modules.login.views.pages to javafx.fxml;
+    opens com.example.mvparchpoc.modules.tasks.views.pages to javafx.fxml;
     exports com.example.mvparchpoc;
 }

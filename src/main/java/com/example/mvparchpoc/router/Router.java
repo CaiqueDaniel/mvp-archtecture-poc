@@ -16,6 +16,7 @@ public class Router {
 
     private Router() {
         routes.put(Routes.LOGIN, (Page) DependencyInjector.getInstance().loginPage());
+        routes.put(Routes.TASKS, (Page) DependencyInjector.getInstance().taskPage());
     }
 
     public void navigateTo(Routes path) {

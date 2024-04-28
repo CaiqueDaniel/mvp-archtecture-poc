@@ -6,10 +6,12 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class Renderer {
-    private final Stage stage = new Stage();
+    private Stage stage;
     private static Renderer instance;
 
     public void render(Page page) throws IOException {
+        if (stage != null) stage.close();
+        stage = new Stage();
         stage.setScene(page.createScene());
         stage.show();
     }
